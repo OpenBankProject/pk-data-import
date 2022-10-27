@@ -10,6 +10,11 @@ The following bank_ids are existing:
 * 'JSBL',
 * 'HABB',
 * 'Mobilink'
+
+If you registered with your official business email domain, you will be granted permission to use all restricted
+ apis needed for the data upload.
+
+*The granting of permission will take place when you login, and it can take some minutes till it is completed for the first time!*
 ### Register a User and Api Key
 
 * get obp username and password as registered with official! bank email address [here](https://ifcsandbox.openbankproject.com/user_mgt/sign_up).
