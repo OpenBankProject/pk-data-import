@@ -1,0 +1,4 @@
+OBP_HOSTNAME = 'https://ifcsandbox.openbankproject.com/'
+OBP_USERNAME = 'username'
+OBP_PASSWORD = 'password'
+OBP_CONSUMER_KEY = 'consumer_key'
