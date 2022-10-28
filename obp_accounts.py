@@ -1,7 +1,5 @@
-import unittest
-import obp_python as obp
 from accounts import create_account_with_customer_links_from_row
-from  openpyxl import Workbook
+from openpyxl import Workbook
 wb = Workbook()
 ws_accounts = wb.create_sheet(title="Accounts")
 ws_accounts['A2'] = "my_bank2"
