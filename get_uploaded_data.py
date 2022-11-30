@@ -1,6 +1,7 @@
 from obp_client import client, empty_body
 import obp_python as obp
 
+# CHANGE bank_id here
 bank_id = 'Telenor'
 
 customer_api = obp.CustomerApi(client)
@@ -17,7 +18,7 @@ print('Accounts: \n\n\n')
 print(accounts)
 account_ids = [x.id for x in accounts.accounts]
 
-
+number_of_transactions = 0
 transaction_api = obp.TransactionFirehoseApi(client)
 for account_id in account_ids:
 	transactions = transaction_api.get_firehose_transactions_for_bank_account(
@@ -28,3 +29,9 @@ for account_id in account_ids:
 	)
 	print('Transactions:\n\n\n')
 	print(transactions)
+	number_of_transactions += len(transactions.transactions)
+
+print('SUMMARY: \n\n')
+print(f'Customers total: {len(customers.customers)}')
+print(f'Accounts total: {len(account_ids)}')
+print(f'Transactions total {number_of_transactions}')

@@ -85,8 +85,8 @@ class TransactionMetadataJSON(object):
         :param narrative: The narrative of this TransactionMetadataJSON.  # noqa: E501
         :type: str
         """
-        if self._configuration.client_side_validation and narrative is None:
-            raise ValueError("Invalid value for `narrative`, must not be `None`")  # noqa: E501
+        # if self._configuration.client_side_validation and narrative is None:
+        #     raise ValueError("Invalid value for `narrative`, must not be `None`")  # noqa: E501
 
         self._narrative = narrative
 
@@ -131,8 +131,8 @@ class TransactionMetadataJSON(object):
         :param where: The where of this TransactionMetadataJSON.  # noqa: E501
         :type: LocationJSONV121
         """
-        if self._configuration.client_side_validation and where is None:
-            raise ValueError("Invalid value for `where`, must not be `None`")  # noqa: E501
+        # if self._configuration.client_side_validation and where is None:
+        #     raise ValueError("Invalid value for `where`, must not be `None`")  # noqa: E501
 
         self._where = where
 

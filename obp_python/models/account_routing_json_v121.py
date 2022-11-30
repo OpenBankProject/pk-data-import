@@ -73,8 +73,8 @@ class AccountRoutingJsonV121(object):
         :param scheme: The scheme of this AccountRoutingJsonV121.  # noqa: E501
         :type: str
         """
-        if self._configuration.client_side_validation and scheme is None:
-            raise ValueError("Invalid value for `scheme`, must not be `None`")  # noqa: E501
+        # if self._configuration.client_side_validation and scheme is None:
+        #     raise ValueError("Invalid value for `scheme`, must not be `None`")  # noqa: E501
 
         self._scheme = scheme
 
@@ -96,8 +96,8 @@ class AccountRoutingJsonV121(object):
         :param address: The address of this AccountRoutingJsonV121.  # noqa: E501
         :type: str
         """
-        if self._configuration.client_side_validation and address is None:
-            raise ValueError("Invalid value for `address`, must not be `None`")  # noqa: E501
+        # if self._configuration.client_side_validation and address is None:
+        #     raise ValueError("Invalid value for `address`, must not be `None`")  # noqa: E501
 
         self._address = address
 
